@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>My Music</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    background: #121212;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    overflow-x: hidden;
+}
+
+.app {
+    min-height: 100vh;
+    padding-bottom: 150px;
+}
+
+/* HEADER */
+
+.header {
+    padding: 55px 20px 15px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* CONTENT */
+
+.content {
+    padding: 0 16px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 22px 0 14px;
+}
+
+.cards {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 145px;
+    background: #181818;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.15s;
+}
+
+.card:active {
+    transform: scale(0.96);
+}
+
+.album-art {
+    width: 125px;
+    height: 125px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #333, #111);
+ 
